@@ -1,0 +1,25 @@
+# --- LLM Framework & HF Integration ---
+# Main framework for building the RAG pipeline
+langchain==0.3.7 
+# Community-contributed tools (loaders, etc.)
+langchain-community==0.3.7 
+# Specialized integration for Hugging Face models/API
+langchain-huggingface==0.1.2 
+
+# --- Vector Database & Embeddings ---
+# Local vector database to store and search your textual chunks
+chromadb==0.5.18 
+# Runs the embedding models locally (more efficient than API calls for embedding)
+sentence-transformers==3.3.1 
+
+# --- Document Handling ---
+# Used for parsing and "cleaning" various text formats
+unstructured==0.16.5 
+
+# --- Environment & API Utilities ---
+# Handles the connection to Hugging Face Hub
+huggingface_hub==0.26.2 
+# Loads your API keys from a .env file for security
+python-dotenv==1.0.1 
+# Data validation and settings management
+pydantic==2.9.2
